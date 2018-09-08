@@ -44,6 +44,8 @@
 
 Prioritize Educational Tasks over 'cool features'
 
+
+Basic plan
   learn vue and implement it
         going to spend the rest of today learning and implementing some Vue
         Heard that it's not included in the immersive
@@ -75,7 +77,7 @@ Higher priority
     time stamps (moment.js)
     ability to add/leave comments on item
   ability to select and delete multiple items (checkbox?)
-  quick add
+  quick add - if i do browser extension
   frequent reminders pool
 
 
