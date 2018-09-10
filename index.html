@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>My First CRUD App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
     <link rel="stylesheet" href="app.css">
 
 
@@ -10,60 +11,33 @@
   </head>
 
 
-  <!--<input type="text" class="user-input-title" v-on:click=""placeholder="Enter the Title">-->
-  <!--<textarea class="user-input-body" placeholder="Enter the body of text"></textarea>-->
 
-  <!--<button class="add-text-btn">add text</button>-->
-  <!--<button class="del-text-btn">delete text</button>-->
-
-  <!--<div class="display"></div>-->
-
-
-
-
-
-  <!--<div id="app">-->
-      <!--{{ message }}-->
-  <!--</div>-->
   <body>
+  <h1 class="frog-title"> FLEXIN ON THESE FROGS </h1>
   <div id="app">
     <input placeholder="New item" v-model="newTodo" @keydown.enter="addTodo">
     <ul class="itemList">
-      <li v-for="todo in todos" :class="{ completed: todo.completed }">
-        <input type="checkbox" v-model="todo.completed" @click.middle="deleteToDo(todo.text)">
-        <span v-show ="todo.edit === false">
-          <label @dblclick="todo.edit = true"> {{todo.text}} </label>
-        </span>
-        <input v-show="todo.edit === true" v-model="todo.text" type="text"
-               v-on:blur="todo.edit=false; $emit('update')"
-               @keyup.enter ="todo.edit=false; $emit('update')"
-               @keyup.esc="todo.edit=false; $emit('update')"
-               v-todo-focus="todo.edit === true">
-      </li>
+
+      <todo-item
+        v-for="todo in todos"
+        v-bind:todo="todo"
+        v-bind:key="todo.text">
+      </todo-item>
     </ul>
   </div>
+      <!--<li v-for="todo in todos" :class="{ completed: todo.completed }">-->
+        <!--<input type="checkbox" v-model="todo.completed" @click.middle="deleteToDo(todo.text)">-->
+        <!--<span v-show ="todo.edit === false">-->
+          <!--<label @dblclick="todo.edit = true"> {{todo.text}} </label>-->
+        <!--</span>-->
+        <!--<input v-show="todo.edit === true" v-model="todo.text" type="text"-->
+               <!--v-on:blur="todo.edit=false; $emit('update')"-->
+               <!--@keyup.enter ="todo.edit=false; $emit('update')"-->
+               <!--@keyup.esc="todo.edit=false; $emit('update')"-->
+               <!--v-todo-focus="todo.edit === true">-->
+      <!--</li>-->
 
-  <!--<div id="app-2">-->
-  <!--<span v-bind:title="message">-->
-    <!--Hover your mouse over me for a few seconds-->
-    <!--to see my dynamically bound title!-->
-  <!--</span>-->
-  <!--</div>-->
-  <!--<div id="app-3">-->
-      <!--<span v-if="seen">Now you see me</span>-->
-  <!--</div>-->
-  <!--<div id="app-4">-->
-      <!--<ol>-->
-          <!--<li v-for="todo in todos">-->
-              <!--{{ todo.text }}-->
-          <!--</li>-->
-      <!--</ol>-->
-  <!--</div>-->
 
-  <!--<div id="demo">-->
-      <!--<p v-on:mouseover="mouseOver" v-bind:class="{on: active, 'off': !active}">Hover over me!</p>-->
-
-  <!--</div>-->
 
 
 

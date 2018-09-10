@@ -8,10 +8,26 @@
 
 /*.off {color: red;}*/
 
+.completed {
+    text-decoration: line-through;
+}
 
+.itemList {
+    list-style-type: none;
+}
 
+/*class="message is-success">*/
+/*<span class="message-header">*/
 
-.completed { text-decoration: line-through; }
+.checkbox {
+    margin: 20px;
+}
 
-.itemList { list-style-type: none;}
+.frog-title {
+    color: #23d160;
+    font-size: 36px;
+}
 
+.message.is-success {
+    margin-bottom: 0;
+}

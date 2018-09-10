@@ -15,7 +15,7 @@
    - [√] a form!
 
    - [ ] UI/UX
-     - [ ] Confirmation of delete/update
+     - [ ] Confirmation of delete/update - maybe small italisized info that disappears next reload
      - [ ] Sortable list
      - [ ] Navigation/Pagination
      - [ ] Mouse over Preview
@@ -35,14 +35,16 @@
 
 
   ## Feature list
-  * denotes on my to do for the project
-  2.5 days = 20 hours
 
-  ### difficulty scale 1-10. 1 meaning it's already finished 10 meaning what?!?!
 
 
 
 Prioritize Educational Tasks over 'cool features'
+
+Learned a bit about Vue and got a working MVP. Did a refactor to include a component. Running into a lot of problems
+bringing Vue into a browser extension because of CSP. There are options using a runtime build or using a single
+file component. Spent an entire day trying to get this to work. Really out of my element with a lot of this. Going
+to try one more thing at the start of today before going another direction. Spending too much time on this.
 
 
 Basic plan
