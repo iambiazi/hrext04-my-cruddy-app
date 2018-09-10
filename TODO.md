@@ -41,10 +41,19 @@
 
 Prioritize Educational Tasks over 'cool features'
 
+  NEW DIRECTION!
+  Creating browser extension that serves as list where a child can easily create a holiday wishlist
+    Save items to local storage
+    Repopulate list from last browser session
+    Ability to sort items based on priority
+
+
 Learned a bit about Vue and got a working MVP. Did a refactor to include a component. Running into a lot of problems
 bringing Vue into a browser extension because of CSP. There are options using a runtime build or using a single
 file component. Spent an entire day trying to get this to work. Really out of my element with a lot of this. Going
-to try one more thing at the start of today before going another direction. Spending too much time on this.
+to try one more thing at the start of today before going another direction. Spending too much time on this. Still
+brainstorming ideas. Looking to add other website browsing integration which is why a browser extension makes more
+sense for my vision. Would make more sense for user to have access while on another website.
 
 
 Basic plan
@@ -105,8 +114,3 @@ Low priority
 
 
      upload files/images
-
-
-
-
-

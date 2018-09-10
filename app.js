@@ -1,4 +1,11 @@
-
+chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.windows.create({
+    url: chrome.runtime.getURL("index.html"),
+    type: "popup",
+    height: 800,
+    width: 300
+  });
+})
 
 Vue.component('todo-item', {
   props: ['todo'],

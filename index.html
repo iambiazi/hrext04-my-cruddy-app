@@ -19,12 +19,11 @@
     <ul class="itemList">
 
       <todo-item
-        v-for="todo in todos"
-        v-bind:todo="todo"
-        v-bind:key="todo.text">
+              v-for="todo in todos"
+              v-bind:todo="todo"
+              v-bind:key="todo.text">
       </todo-item>
-    </ul>
-  </div>
+
       <!--<li v-for="todo in todos" :class="{ completed: todo.completed }">-->
         <!--<input type="checkbox" v-model="todo.completed" @click.middle="deleteToDo(todo.text)">-->
         <!--<span v-show ="todo.edit === false">-->
@@ -43,5 +42,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="app.js"></script>
+
+
+    </ul>
+  </div>
   </body>
 </html>
